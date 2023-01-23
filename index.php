@@ -1,3 +1,8 @@
+<?php
+require_once('common/head_parts.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 

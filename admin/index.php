@@ -25,6 +25,7 @@ require_once('common/head_parts.php');
 <!--アイコン -->
 
 
+
 <!-- 目標設定 -->
 <form method="POST" action="insert.php">
     <label for="time">学習目標時間を設定してください</label>

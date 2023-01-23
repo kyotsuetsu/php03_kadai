@@ -6,6 +6,19 @@ function h($str)
     return htmlspecialchars($str, ENT_QUOTES);
 }
 
+
+// ログインチェック処理
+function loginCheck()
+{
+    if (!isset($_SESSION['chk_ssid']) || $_SESSION['chk_ssid'] != session_id()) {
+        header('Location: login.php?login_error=1');
+        exit();
+    } else {
+        session_regenerate_id(true);
+        $_SESSION['chk_ssid'] = session_id();
+    }
+}
+
 //DB接続
 function db_conn()
 {
@@ -47,4 +60,9 @@ function loginCheck(){
         $_SESSION['chk_ssid'] = session_id();
         //ログインok
     }
+}
+
+//SessionCheck
+function sschk()
+{
 }

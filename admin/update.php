@@ -1,4 +1,8 @@
 <?php
+session_start();
+
+require_once('../funcs.php');
+loginCheck();
 
 //PHP:コード記述/修正の流れ
 //1. insert.phpの処理をマルっとコピー。
